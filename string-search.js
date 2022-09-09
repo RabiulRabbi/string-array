@@ -5,7 +5,7 @@ const products = [
     'products with laptop',
     'purple color mobile phone'
 ]
-const search = 'products';
+const search = 'phone';
 const output = [];
 
 for(const product of products){
@@ -24,6 +24,12 @@ for(const product of products){
 
 for(const product of products){
     if(product.toLowerCase().startsWith(search.toLowerCase())){
+        // output.push(product);
+    }
+}
+// console.log(output);
+for(const product of products){
+    if(product.toLowerCase().endsWith(search.toLowerCase())){
         output.push(product);
     }
 }
